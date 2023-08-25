@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea86b4540c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li style="display: flex;flex-direction: column;align-items: center;">
+                    <img src="./assets/vinea.png" style="max-width: 100%;height: auto;">
+                        <h1 class="nome">Vinea</h1>
+                        <h2 class="about">Cartucha</h2>
+                        <h1 class="ml">750ml</h1>
+                        <h2 class="tipo">Tinto</h2>
+                    <div class="item_container">
+                        <!-- <div class="item">
+                            <button>-</button>
+                            <h1>0</h1>
+                            <button>+</button>
+                        </div> -->
+                        <i class="fa-solid fa-heart" onclick="add(event)"></i>
+                    </div>
+                </li>
+                <li style="display: flex;flex-direction: column;align-items: center;">
+                    <img src="./assets/syrah.png" style="max-width: 100%;height: auto;">
+                        <h1 class="nome">Syrah</h1>
+                        <h2 class="about">Almaúnica</h2>
+                        <h1 class="ml">750ml</h1>
+                        <h2 class="tipo">Tinto</h2>
+                    <div class="item_container">
+                        <!-- <div class="item">
+                            <button>-</button>
+                            <h1>0</h1>
+                            <button>+</button>
+                        </div> -->
+                        <i class="fa-solid fa-heart" onclick="add(event)"></i>
+                    </div>
+                </li>
+                <li style="display: flex;flex-direction: column;align-items: center;">
+                    <img src="./assets/au.png" style="max-width: 100%;height: auto;">
+                        <h1 class="nome">Syrah</h1>
+                        <h2 class="about">Almaúnica</h2>
+                        <h1 class="ml">750ml</h1>
+                        <h2 class="tipo">Tinto</h2>
+                    <div class="item_container">
+                        <!-- <div class="item">
+                            <button>-</button>
+                            <h1>0</h1>
+                            <button>+</button>
+                        </div> -->
+                        <i class="fa-solid fa-heart" onclick="add(event)"></i>
+                    </div>
+                </li>
+            </ul>
+
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+
+
+    </div>
+        <script>
+            // let heart = document.querySelector(".fa-heart")
+            let img = document.querySelector("img")
+
+            function add(event){
+                let heart = event.target;
+                heart.classList.toggle("active")
+                console.log(heart)
+            }
+
+            // heart.addEventListener("click", () =>{
+            //     heart.classList.toggle('active')
+            // })
+            
+        </script>
+</body>
+
+</html>
